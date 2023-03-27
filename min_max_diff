@@ -1,0 +1,5 @@
+min,max- SELECT MAX(column_name), MIN(column_name) FROM mytable;
+diff-SELECT MAX(column_name) - MIN(column_name) as difference FROM mytable;
+
+
+select max(population)-min(population) as difference from CITY;

@@ -1,0 +1,12 @@
+No, "greatest" and "maximum" are not the same in SQL.
+
+MAX is a function in SQL that returns the maximum value of a given column. For example, the query SELECT MAX(salary) FROM employees; would return the highest salary value from the employees table.
+
+GREATEST is a function in SQL that takes multiple values as arguments and returns the greatest value. For example, the query SELECT GREATEST(5, 10, 15); would return 15, since it is the greatest value among the three arguments.
+
+So while both functions can be used to find the maximum value of a set of values, they have different applications. MAX is used to find the maximum value of a column in a table, while GREATEST is used to find the greatest value among a set of values.
+//SELECT GREATEST(age1, age2, age3) AS greatest_age
+FROM mytable
+WHERE age1 < 60 AND age2 < 60 AND age3 < 60;//
+
+select TRUNCATE(max(LAT_N),4) as greatest_LAT_N  from STATION where LAT_N<137.2345;

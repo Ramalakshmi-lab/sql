@@ -1,0 +1,2 @@
+substring(valuename,no),ATTRIBUTE;
+select name from STUDENTS where marks>75 order by SUBSTRING(NAME,-3),ID;
